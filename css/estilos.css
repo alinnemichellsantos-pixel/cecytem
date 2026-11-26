@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f5e5;
+    color: #183d24;
+}
+
+header {
+    background-color: #14532d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: #238636;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #b91c1c;
+}
+
+.principal {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #14532d, #238636);
+    color: white;
+}
+
+.principal h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.principal img {
+    width: 80%;
+    max-width: 700px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.contenido {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #00000020;
+}
+
+.contenido h2 {
+    color: #b91c1c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contenido p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria img {
+    width: 30%;
+    min-width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.imagen-grande {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #238636;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #b91c1c;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #14532d;
+}
+
+.resena {
+    background-color: #e9f5e5;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid #238636;
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 30px;
+    line-height: 2;
+}
+
+footer {
+    background-color: #14532d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        margin: 5px;
+    }
+
+    .principal h2 {
+        font-size: 25px;
+    }
+
+    .principal img,
+    .imagen-grande {
+        width: 100%;
+    }
+
+    .galeria img {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+}
